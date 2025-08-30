@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-void pattern6(int n){
+void pattern17(int n){
     for(int i = 0; i < n; i++){
-        for(int j = 1; j < n - i + 1; j++){
-            cout << j << " ";
+        for(char ch = 'E' - i; ch <= 'E'; ch++){
+            cout << ch << " ";
         }
         cout << endl;
     }
@@ -16,6 +16,6 @@ int main(){
     for(int i = 0; i < t; i++){
         int n;
         cin >> n;
-        pattern6(n);
+        pattern17(n);
     }
 }
